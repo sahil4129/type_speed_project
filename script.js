@@ -69,6 +69,10 @@ function spellCheck() {
 
 // Start the timer:
 function start() {
+    if(window.orientation > -1){
+        alert("Please Use Desktop for typing test at our platform");
+        return;
+    }
     let textEnterdLength = testArea.value.length;
     if (textEnterdLength === 0 && !timerRunning) {
         timerRunning = true;
