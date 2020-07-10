@@ -14,8 +14,7 @@ function randGen() {
 function sentence() {
     if(window.orientation > -1){
         alert("Please Use Desktop for typing test at our platform");
-        document.write('<script type="text/undefined">')
-        window.stop(); 
+        window.location.href ='error-page.html'
     }
   var rand1 = Math.floor(Math.random() * 10);
   var rand2 = Math.floor(Math.random() * 10);
