@@ -146,6 +146,11 @@ body {
     margin: 1em 0;
     padding: 1em 1em 0;
     background-color: #ededed;
+    -moz-user-select: none;  
+-webkit-user-select: none;  
+-ms-user-select: none;  
+-o-user-select: none;  
+user-select: none;
 }
 
 #origin-text p {
