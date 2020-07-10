@@ -12,6 +12,10 @@ function randGen() {
   return Math.floor(Math.random() * 5);
 }
 function sentence() {
+    if(window.orientation > -1){
+        alert("Please Use Desktop for typing test at our platform");
+        return 
+    }
   var rand1 = Math.floor(Math.random() * 10);
   var rand2 = Math.floor(Math.random() * 10);
   var rand3 = Math.floor(Math.random() * 10);
@@ -69,10 +73,7 @@ function spellCheck() {
 
 // Start the timer:
 function start() {
-    if(window.orientation > -1){
-        alert("Please Use Desktop for typing test at our platform");
-        return;
-    }
+    
     let textEnterdLength = testArea.value.length;
     if (textEnterdLength === 0 && !timerRunning) {
         timerRunning = true;
